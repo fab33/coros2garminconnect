@@ -32,4 +32,5 @@ jobs:
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
         run: |
           python coros.py
+          ls -la
           python garmin.py
