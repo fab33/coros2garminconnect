@@ -28,4 +28,6 @@ jobs:
           COROS_PASSWORD: ${{ secrets.COROS_PASSWORD }}
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
-        run: python main.py
+        run: |
+          python coros.py
+          python garmin.py
